@@ -15,7 +15,7 @@ We will be writing all our code in a new IDE called <b>Remix</b>. It sucks, but 
 
 Remix is a code editor for Solidity. It also runs a toy blockchain that we’ll be using to deploy our first contract. Most of the steps are automated in Remix. In a later Quest, we’ll install all the components by hand to understand better what is happening under the hood.
 ## First contract (get contract balance)
-[https://remix.ethereum.org/\#version=soljson-v0.8.4\+commit.c7e474f2.js&optimize=false&runs=200&gist=6df9936208ff26cffa24fb0ed60f3a2e&evmVersion=null](https://remix.ethereum.org/#version=soljson-v0.8.4+commit.c7e474f2.js&optimize=false&runs=200&gist=6df9936208ff26cffa24fb0ed60f3a2e&evmVersion=null)
+[https://remix.ethereum.org/#version=soljson-v0.8.4\+commit.c7e474f2.js&optimize=false&runs=200&gist=6df9936208ff26cffa24fb0ed60f3a2e&evmVersion=null](https://remix.ethereum.org/#version=soljson-v0.8.4+commit.c7e474f2.js&optimize=false&runs=200&gist=6df9936208ff26cffa24fb0ed60f3a2e&evmVersion=null)
 
 This is the first contract.
 
@@ -72,7 +72,7 @@ You have to look for <b>“decoded_output”</b> in these logs.
 
 It is zero right now because we’ve not sent any money to our contract. Let us now send some money in!
 ## Add money to contract
-[https://remix.ethereum.org/\#version=soljson-v0.8.4\+commit.c7e474f2.js&optimize=false&runs=200&gist=845518edb7aba6f96cc863856fa1253b](https://remix.ethereum.org/#version=soljson-v0.8.4+commit.c7e474f2.js&optimize=false&runs=200&gist=845518edb7aba6f96cc863856fa1253b)
+[https://remix.ethereum.org/#version=soljson-v0.8.4\+commit.c7e474f2.js&optimize=false&runs=200&gist=845518edb7aba6f96cc863856fa1253b](https://remix.ethereum.org/#version=soljson-v0.8.4+commit.c7e474f2.js&optimize=false&runs=200&gist=845518edb7aba6f96cc863856fa1253b)
 
 What would we have to do if we have to add some balance to a user? We’ll create a function that takes parameters address of the user who’s balance we want to update and a value of by how much.
 
@@ -94,7 +94,7 @@ To make sure this is a valid transaction, we need to add the following checks
 
 This is a lot of mess, right? Ethereum let’s you bypass all of these checks. Let’s see how to write this code better in the next subquest.
 ## Add money to contract
-[https://remix.ethereum.org/\#version=soljson-v0.8.4\+commit.c7e474f2.js&optimize=false&runs=200&gist=b69817e3901cd5e203c4ad37f170fae0&evmVersion=null](https://remix.ethereum.org/#version=soljson-v0.8.4+commit.c7e474f2.js&optimize=false&runs=200&gist=b69817e3901cd5e203c4ad37f170fae0&evmVersion=null)
+[https://remix.ethereum.org/#version=soljson-v0.8.4\+commit.c7e474f2.js&optimize=false&runs=200&gist=b69817e3901cd5e203c4ad37f170fae0&evmVersion=null](https://remix.ethereum.org/#version=soljson-v0.8.4+commit.c7e474f2.js&optimize=false&runs=200&gist=b69817e3901cd5e203c4ad37f170fae0&evmVersion=null)
 
 In this code, we’ve added a function called addBalance
 
@@ -142,7 +142,7 @@ You’ll also notice that the number is much larger than the number of ethers yo
 
 Now that we have money, how do we generate interest? 1
 ## introducing block, interest
-[https://remix.ethereum.org/\#version=soljson-v0.8.4\+commit.c7e474f2.js&optimize=false&runs=200&gist=a89ad8b401426cb74656979d6dd6e58a&evmVersion=null](https://remix.ethereum.org/#version=soljson-v0.8.4+commit.c7e474f2.js&optimize=false&runs=200&gist=a89ad8b401426cb74656979d6dd6e58a&evmVersion=null)
+[https://remix.ethereum.org/#version=soljson-v0.8.4\+commit.c7e474f2.js&optimize=false&runs=200&gist=a89ad8b401426cb74656979d6dd6e58a&evmVersion=null](https://remix.ethereum.org/#version=soljson-v0.8.4+commit.c7e474f2.js&optimize=false&runs=200&gist=a89ad8b401426cb74656979d6dd6e58a&evmVersion=null)
 
 When withdrawing, we not only want to give the money back, we also want to add some interest.
 
@@ -158,7 +158,7 @@ Note that the calculation looks a little complex because solidity doesn’t have
 
 Now that the interest has been calculated, let’s withdraw.
 ## withdraw, transfer
-https://remix.ethereum.org/\#version=soljson-v0.8.7\+commit.e28d00a7.js&optimize=false&runs=200&gist=3555d7cca21a79acf36197d72e0c411f&evmVersion=null
+https://remix.ethereum.org/#version=soljson-v0.8.7\+commit.e28d00a7.js&optimize=false&runs=200&gist=3555d7cca21a79acf36197d72e0c411f&evmVersion=null
 
 Here we will allow for a withdrawal.
 
